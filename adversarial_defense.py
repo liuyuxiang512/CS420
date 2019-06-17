@@ -18,7 +18,7 @@ checkpoint = torch.load('models/PrivateTest_model.t7')
 net.load_state_dict(checkpoint['net'])
 
 print("start loading data!")
-data = pd.read_csv("fer2013.csv")
+data = pd.read_csv("data/fer2013.csv")
 print("loading data done")
 pixels_values = data.pixels.str.split(" ").tolist()
 print("split done")
@@ -56,7 +56,7 @@ for i in range(359):
         adv_untargeted = adversary.perturb(cln_data_c, labels_c)
         adv = adv_untargeted
 
-        with open('adv.txt', 'a') as f:
+        with open('data/adv.txt', 'a') as f:
             for data in adv_untargeted:
                 dat = data[1].data.numpy().reshape(1, -1).ravel()
                 for d in dat:
@@ -70,7 +70,7 @@ for i in range(359):
         defense = nn.Sequential(jpeg_filter, bits_squeezing, median_filter,)
 
         adv_defended = defense(adv)
-        with open('adv_defended.txt','a') as f:
+        with open('data/adv_defended.txt','a') as f:
             for data in adv_defended:
                 dat = data[1].data.numpy().reshape(1, -1).ravel()
                 for d in dat:
@@ -78,7 +78,7 @@ for i in range(359):
                 f.write('\n')
 
         cln_defended = defense(cln_data_c)
-        with open('cln_defended.txt','a') as f:
+        with open('data/cln_defended.txt','a') as f:
             for data in cln_defended:
                 dat = data[1].data.numpy().reshape(1, -1).ravel()
                 for d in dat:
@@ -93,7 +93,7 @@ for i in range(359):
         adv_untargeted = adversary.perturb(cln_data_c, labels_c)
         adv = adv_untargeted
 
-        with open('adv.txt', 'a') as f:
+        with open('data/adv.txt', 'a') as f:
             for data in adv_untargeted:
                 dat = data[1].data.numpy().reshape(1, -1).ravel()
                 for d in dat:
@@ -107,7 +107,7 @@ for i in range(359):
         defense = nn.Sequential(jpeg_filter, bits_squeezing, median_filter, )
 
         adv_defended = defense(adv)
-        with open('adv_defended.txt', 'a') as f:
+        with open('data/adv_defended.txt', 'a') as f:
             for data in adv_defended:
                 dat = data[1].data.numpy().reshape(1, -1).ravel()
                 # print(dat.shape)
@@ -116,7 +116,7 @@ for i in range(359):
                 f.write('\n')
 
         cln_defended = defense(cln_data_c)
-        with open('cln_defended.txt', 'a') as f:
+        with open('data/cln_defended.txt', 'a') as f:
             for data in cln_defended:
                 dat = data[1].data.numpy().reshape(1, -1).ravel()
                 for d in dat:

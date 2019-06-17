@@ -47,7 +47,7 @@ def cal_acc(filename):
     adv = torch.FloatTensor(image)
 
     net = VGG("VGG19")
-    checkpoint = torch.load('./models/PrivateTest_model.t7')
+    checkpoint = torch.load('models/PrivateTest_model.t7')
     net.load_state_dict(checkpoint['net'])
     pred = predict_from_logits(net(adv))
 
