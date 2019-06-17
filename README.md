@@ -26,7 +26,7 @@ Import packages in python files.
 ### Python files
 **adversarial_defense.py** should run first.
 * **adversarial_defense.py** is to perform attack and defense, and generate adversarial as well as defended data files.
-* **accuracy.py** is an accuracy test on all three kinds of data..
+* **accuracy.py** is an accuracy test on all three kinds of data.
 * **comparison.py** is a visulization of prediction and comparison results.
 
 ### Data files
