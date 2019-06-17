@@ -37,9 +37,9 @@ Download [Facial Expression Recognition Dataset](https://www.kaggle.com/c/challe
 
 #### Generate other data
 Run *adversarial_defense.py* to generate:
-* **cln_defended.txt** is defended clean data;
-* **adv.txt** is adversarial data;
-* **adv_defended.txt** is defended adversarial data.
+* **cln_defended.txt**: defended clean data;
+* **adv.txt**: adversarial data;
+* **adv_defended.txt**: defended adversarial data.
 
 ### Model files
 In **models** folder, there are pre-trained model and network. Refer to [Project](https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch).
