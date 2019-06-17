@@ -22,8 +22,14 @@ pip install advertorch
 
 # Files
 ## data
-**fer2013.csv** is the initial dataset
-
+First create a **data** folder and then add files.
+### Dataset
+Download **fer2013** from [Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge) and add **fer2013.csv** file to **data** folder.
+### Generate other data
+Run **adversarial_defense.py**
+```
+python adversarial_defense.py
+```
 **cln_defended.txt** is defended clean data
 
 **adv.txt** is adversarial data
