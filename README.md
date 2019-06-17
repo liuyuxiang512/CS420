@@ -1,9 +1,9 @@
 # CS420 Bonus
 Bonus in final project of CS420 in SJTU. About Adversarial Machine Learning.
 
-Based on the pre-trained model, we apply AdverTorch to attack our model and defense.
+Based on the pre-trained model (we use VGG19), we apply AdverTorch to attack our model and defense.
 
-For model part, refer to my collaborator JiaYi's [repository](https://github.com/JiayiXuDaisy/Machine-Learning/tree/master/Prj/Module%20B).
+For model part, please refer to my collaborator JiaYi's [repository](https://github.com/JiayiXuDaisy/Machine-Learning/tree/master/Prj/Module%20B).
 
 Here, we perform untargeted attack and construct defenses based on preprocessing.
 
