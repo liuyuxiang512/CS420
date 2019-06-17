@@ -1,7 +1,9 @@
 # CS420 Bonus
-Bonus in final project of CS420 in SJTU.
+Bonus in final project of CS420 in SJTU. About Adversarial Machine Learning.
 
-This is about Adversarial Machine Learning. Based on the pre-trained model, we apply AdverTorch to attack our model and defense.
+Based on the pre-trained model, we apply AdverTorch to attack our model and defense.
+
+For model part, refer to my collaborator JiaYi's [repository](https://github.com/JiayiXuDaisy/Machine-Learning/tree/master/Prj/Module%20B).
 
 Here, we perform untargeted attack and construct defenses based on preprocessing.
 
@@ -23,6 +25,15 @@ Refer to [AdverTorch](https://github.com/BorealisAI/advertorch.git)
 Import packages in python files.
 
 ## Files
+### Python files
+**adversarial_defense.py** should run first.
+
+* **adversarial_defense.py** is to perform attack and defense, and generate data files.
+
+* **accuracy.py** is an accuracy test on all three kinds of data..
+
+* **comparison.py** is a visulization of prediction and comparison results.
+
 ### Data files
 First create a **data** folder and then add files.
 
@@ -40,12 +51,5 @@ python adversarial_defense.py
 
 * **adv_defended.txt** is defended adversarial data.
 
-### Python files
-**adversarial_defense.py** should run first.
-
-* **adversarial_defense.py** is to perform attack and defense, and generate data files.
-
-* **accuracy.py** is an accuracy test on all three kinds of data..
-
-* **comparison.py** is a visulization of prediction and comparison results.
-
+### Model files
+In **models** folder, there are pre-trained model and network we use.
