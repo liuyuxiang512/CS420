@@ -3,9 +3,7 @@ Bonus on Adversarial Machine Learning in final project of CS420 in SJTU.
 
 Based on pre-trained model (we use VGG19), we apply AdverTorch to attack our classifier and defense.
 
-For model part, please refer to my collaborator JiaYi's [repository](https://github.com/JiayiXuDaisy/Machine-Learning/tree/master/Prj/Module%20B).
-
-Here, we perform untargeted attack and construct defenses based on preprocessing.
+Particularly, we perform untargeted attack and construct defenses based on preprocessing.
 
 ## How to use
 ### Install PyTorch
@@ -47,4 +45,7 @@ Generate:
 * **adv_defended.txt** is defended adversarial data.
 
 ### Model files
-In **models** folder, there are pre-trained model and network.
+In **models** folder, there are pre-trained model and network. Refer to [Project](https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch).
+
+## Acknowledgement
+Thanks to my collaborator JiaYi, course TAs, and our teacher Tu Shikui.
