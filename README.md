@@ -33,7 +33,7 @@ Import packages in python files.
 First create a **data** folder.
 
 #### Dataset
-Download *Facial Expression Recognition Dataset* from [Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge) and add **fer2013.csv** file to **data** folder.
+Download [Facial Expression Recognition Dataset](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge) and add **fer2013.csv** file to **data** folder.
 
 #### Generate other data
 ```
