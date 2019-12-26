@@ -42,7 +42,7 @@ Run *adversarial_defense.py* to generate:
 * **adv_defended.txt**: defended adversarial data.
 
 ### Model files
-In **models** folder, there are pre-trained model and network. Refer to [Project](https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch).
+In **models** folder, there are pre-trained model and network. Refer to [Project](https://github.com/liuyuxiang512/Facial-Expression-Recognition).
 
 ## Acknowledgement
-Thanks to my collaborator [JiaYi](https://github.com/JiayiXuDaisy), course TAs, and our teacher Tu Shikui.
+Thanks to my collaborator JiaYi, course TAs, and our teacher Tu Shikui.
